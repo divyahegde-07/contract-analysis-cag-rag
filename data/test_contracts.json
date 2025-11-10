@@ -1,0 +1,241 @@
+{
+  "contracts": [
+    {
+      "contract_id": "SAAS_001",
+      "contract_name": "CloudSync Pro - Software as a Service Agreement",
+      "vendor": "CloudSync Technologies Inc.",
+      "client": "Acme Corporation",
+      "effective_date": "2024-01-15",
+      "clauses": [
+        {
+          "clause_number": 1,
+          "clause_type": "indemnification",
+          "clause_text": "The Vendor shall indemnify and hold harmless the Client from any claims arising from the Vendor's negligence, but excludes any liability for indirect or consequential damages regardless of cause.",
+          "is_standard": true,
+          "clause_id_reference": "INDEM_001"
+        },
+        {
+          "clause_number": 2,
+          "clause_type": "liability_cap",
+          "clause_text": "Vendor's total liability under this agreement shall not exceed the fees paid by Client in the preceding three (3) months.",
+          "is_standard": true,
+          "clause_id_reference": "LIAB_001"
+        },
+        {
+          "clause_number": 3,
+          "clause_type": "jurisdiction",
+          "clause_text": "This Agreement shall be governed by the laws of the State of Delaware, and any disputes shall be resolved exclusively in the courts of Delaware.",
+          "is_standard": true,
+          "clause_id_reference": "JURIS_001"
+        },
+        {
+          "clause_number": 4,
+          "clause_type": "payment_terms",
+          "clause_text": "Client agrees to pay all fees annually in advance within five (5) business days of invoice date. Late payments shall incur interest at 2% per month. All fees are non-refundable.",
+          "is_standard": true,
+          "clause_id_reference": "PAYMENT_001"
+        },
+        {
+          "clause_number": 5,
+          "clause_type": "termination",
+          "clause_text": "This Agreement shall automatically renew for successive one-year terms unless either party provides written notice of non-renewal at least ninety (90) days prior to the end of the then-current term.",
+          "is_standard": true,
+          "clause_id_reference": "TERM_001"
+        },
+        {
+          "clause_number": 6,
+          "clause_type": "indemnification",
+          "clause_text": "Vendor agrees to defend Client against third-party claims related to the software, provided that such claims do not arise from Client's modifications to the software or misuse of the service.",
+          "is_standard": false,
+          "variation_note": "Variation: More specific about software-related claims but still missing data breach coverage"
+        },
+        {
+          "clause_number": 7,
+          "clause_type": "liability_cap",
+          "clause_text": "In no event shall Vendor's aggregate liability exceed the amount of $25,000 or the total fees paid in the prior six months, whichever is less.",
+          "is_standard": false,
+          "variation_note": "Variation: Introduces absolute cap that could be even lower than time-based cap"
+        },
+        {
+          "clause_number": 8,
+          "clause_type": "jurisdiction",
+          "clause_text": "Any legal action arising from this Agreement must be brought in the state or federal courts located in New York County, New York. Each party consents to personal jurisdiction in such courts.",
+          "is_standard": false,
+          "variation_note": "Variation: Different jurisdiction (NY instead of DE) but same structural issue"
+        },
+        {
+          "clause_number": 9,
+          "clause_type": "payment_terms",
+          "clause_text": "Subscription fees are billed quarterly in advance and are due within 10 days of invoice. Unpaid balances after 30 days will result in service suspension. No refunds for partial quarters.",
+          "is_standard": false,
+          "variation_note": "Variation: Quarterly vs annual, but still short payment window and non-refundable issues"
+        },
+        {
+          "clause_number": 10,
+          "clause_type": "termination",
+          "clause_text": "Either party may terminate this Agreement with 120 days written notice. Early termination by Client forfeits all prepaid fees. Vendor may terminate immediately for non-payment.",
+          "is_standard": false,
+          "variation_note": "Variation: Even longer notice period (120 days) with forfeiture penalty"
+        }
+      ]
+    },
+    {
+      "contract_id": "SAAS_002",
+      "contract_name": "DataVault Enterprise - Master Service Agreement",
+      "vendor": "DataVault Security Solutions LLC",
+      "client": "TechStart Industries",
+      "effective_date": "2024-03-22",
+      "clauses": [
+        {
+          "clause_number": 1,
+          "clause_type": "indemnification",
+          "clause_text": "The Vendor shall indemnify and hold harmless the Client from any claims arising from the Vendor's negligence, but excludes any liability for indirect or consequential damages regardless of cause.",
+          "is_standard": true,
+          "clause_id_reference": "INDEM_001"
+        },
+        {
+          "clause_number": 2,
+          "clause_type": "liability_cap",
+          "clause_text": "Vendor's total liability under this agreement shall not exceed the fees paid by Client in the preceding three (3) months.",
+          "is_standard": true,
+          "clause_id_reference": "LIAB_001"
+        },
+        {
+          "clause_number": 3,
+          "clause_type": "jurisdiction",
+          "clause_text": "This Agreement shall be governed by the laws of the State of Delaware, and any disputes shall be resolved exclusively in the courts of Delaware.",
+          "is_standard": true,
+          "clause_id_reference": "JURIS_001"
+        },
+        {
+          "clause_number": 4,
+          "clause_type": "payment_terms",
+          "clause_text": "Client agrees to pay all fees annually in advance within five (5) business days of invoice date. Late payments shall incur interest at 2% per month. All fees are non-refundable.",
+          "is_standard": true,
+          "clause_id_reference": "PAYMENT_001"
+        },
+        {
+          "clause_number": 5,
+          "clause_type": "termination",
+          "clause_text": "This Agreement shall automatically renew for successive one-year terms unless either party provides written notice of non-renewal at least ninety (90) days prior to the end of the then-current term.",
+          "is_standard": true,
+          "clause_id_reference": "TERM_001"
+        },
+        {
+          "clause_number": 6,
+          "clause_type": "indemnification",
+          "clause_text": "Vendor shall indemnify Client for losses resulting from Vendor's breach of confidentiality obligations, excluding any claims where Client failed to implement reasonable security measures as advised by Vendor.",
+          "is_standard": false,
+          "variation_note": "Variation: Focuses on confidentiality but shifts some security responsibility to Client"
+        },
+        {
+          "clause_number": 7,
+          "clause_type": "liability_cap",
+          "clause_text": "Vendor's maximum liability for all claims shall be limited to two times the monthly recurring charges, not to exceed $50,000 in aggregate.",
+          "is_standard": false,
+          "variation_note": "Variation: Uses monthly recurring charges with absolute cap - could be very low for small contracts"
+        },
+        {
+          "clause_number": 8,
+          "clause_type": "jurisdiction",
+          "clause_text": "This Agreement is governed by California law. All disputes shall be resolved through binding arbitration in San Francisco, California under JAMS rules.",
+          "is_standard": false,
+          "variation_note": "Variation: Different state (CA) and uses arbitration instead of litigation"
+        },
+        {
+          "clause_number": 9,
+          "clause_type": "payment_terms",
+          "clause_text": "Annual fees are payable in full upon contract execution. A 5% discount applies if paid within 3 business days. Late payments beyond 15 days incur 18% annual interest. All sales are final.",
+          "is_standard": false,
+          "variation_note": "Variation: Incentivizes fast payment but even shorter window, and 'all sales final' is more aggressive"
+        },
+        {
+          "clause_number": 10,
+          "clause_type": "termination",
+          "clause_text": "The initial term is 24 months with automatic renewal for 12-month periods. Termination requires 6 months written notice before renewal date. No termination permitted during initial term.",
+          "is_standard": false,
+          "variation_note": "Variation: Multi-year initial term with 6-month notice and no early termination - severe lock-in"
+        }
+      ]
+    },
+    {
+      "contract_id": "SAAS_003",
+      "contract_name": "AI Analytics Platform - Subscription Agreement",
+      "vendor": "Neural Insights Corp",
+      "client": "Global Retail Group",
+      "effective_date": "2024-06-10",
+      "clauses": [
+        {
+          "clause_number": 1,
+          "clause_type": "indemnification",
+          "clause_text": "The Vendor shall indemnify and hold harmless the Client from any claims arising from the Vendor's negligence, but excludes any liability for indirect or consequential damages regardless of cause.",
+          "is_standard": true,
+          "clause_id_reference": "INDEM_001"
+        },
+        {
+          "clause_number": 2,
+          "clause_type": "liability_cap",
+          "clause_text": "Vendor's total liability under this agreement shall not exceed the fees paid by Client in the preceding three (3) months.",
+          "is_standard": true,
+          "clause_id_reference": "LIAB_001"
+        },
+        {
+          "clause_number": 3,
+          "clause_type": "jurisdiction",
+          "clause_text": "This Agreement shall be governed by the laws of the State of Delaware, and any disputes shall be resolved exclusively in the courts of Delaware.",
+          "is_standard": true,
+          "clause_id_reference": "JURIS_001"
+        },
+        {
+          "clause_number": 4,
+          "clause_type": "payment_terms",
+          "clause_text": "Client agrees to pay all fees annually in advance within five (5) business days of invoice date. Late payments shall incur interest at 2% per month. All fees are non-refundable.",
+          "is_standard": true,
+          "clause_id_reference": "PAYMENT_001"
+        },
+        {
+          "clause_number": 5,
+          "clause_type": "termination",
+          "clause_text": "This Agreement shall automatically renew for successive one-year terms unless either party provides written notice of non-renewal at least ninety (90) days prior to the end of the then-current term.",
+          "is_standard": true,
+          "clause_id_reference": "TERM_001"
+        },
+        {
+          "clause_number": 6,
+          "clause_type": "indemnification",
+          "clause_text": "Vendor will protect Client from infringement claims regarding the AI models and algorithms, but Client assumes all risk for how it uses the analytics outputs in its business decisions.",
+          "is_standard": false,
+          "variation_note": "Variation: Covers IP but completely excludes liability for business decisions based on AI output"
+        },
+        {
+          "clause_number": 7,
+          "clause_type": "liability_cap",
+          "clause_text": "Total liability is capped at the lesser of actual damages or fees paid in the 90-day period immediately preceding the claim, with a maximum aggregate liability of $100,000 over the agreement term.",
+          "is_standard": false,
+          "variation_note": "Variation: Even shorter lookback (90 days vs 3 months explicit) with lifetime aggregate cap"
+        },
+        {
+          "clause_number": 8,
+          "clause_type": "jurisdiction",
+          "clause_text": "The laws of Texas govern this Agreement without regard to conflict of law principles. Exclusive venue for any litigation is Travis County, Texas.",
+          "is_standard": false,
+          "variation_note": "Variation: Texas jurisdiction with specific county venue requirement"
+        },
+        {
+          "clause_number": 9,
+          "clause_type": "payment_terms",
+          "clause_text": "Monthly subscription fees are auto-charged to Client's credit card on the 1st of each month. Failed payments result in immediate service termination. Chargebacks will incur a $250 administrative fee.",
+          "is_standard": false,
+          "variation_note": "Variation: Auto-billing with immediate termination and chargeback penalties - very aggressive"
+        },
+        {
+          "clause_number": 10,
+          "clause_type": "termination",
+          "clause_text": "Minimum commitment is 18 months. After the initial period, either party may cancel with 60 days notice to the end of a calendar quarter. Early termination by Client requires payment of 50% of remaining contract value.",
+          "is_standard": false,
+          "variation_note": "Variation: 18-month minimum with early termination penalty - significant financial risk"
+        }
+      ]
+    }
+  ]
+}

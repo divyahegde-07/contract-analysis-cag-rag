@@ -1,0 +1,59 @@
+{
+  "standard_clauses": [
+    {
+      "clause_id": "INDEM_001",
+      "clause_type": "indemnification",
+      "clause_text": "The Vendor shall indemnify and hold harmless the Client from any claims arising from the Vendor's negligence, but excludes any liability for indirect or consequential damages regardless of cause.",
+      "compliance_violation": {
+        "violation_type": "Missing indemnification clauses",
+        "severity": "HIGH",
+        "description": "Indemnification clause is incomplete and does not cover critical areas including data breaches, IP infringement, and regulatory violations."
+      },
+      "redline_comment": "⚠️ CRITICAL ISSUE: Indemnification clause is incomplete. Must explicitly cover: (1) Data breaches and unauthorized access, (2) Third-party IP infringement claims, (3) Regulatory violations (GDPR, CCPA, SOC2). Additionally, the blanket exclusion of indirect/consequential damages is unacceptable for SaaS agreements where data loss could cause significant business harm. RECOMMENDATION: Add '...including but not limited to data breaches, intellectual property infringement, regulatory compliance violations, and service interruptions. Exclusions for consequential damages shall not apply to breaches of confidentiality or data security obligations.'"
+    },
+    {
+      "clause_id": "LIAB_001",
+      "clause_type": "liability_cap",
+      "clause_text": "Vendor's total liability under this agreement shall not exceed the fees paid by Client in the preceding three (3) months.",
+      "compliance_violation": {
+        "violation_type": "Non-standard liability caps",
+        "severity": "HIGH",
+        "description": "Liability cap of 3 months is significantly below industry standard for enterprise SaaS agreements and provides insufficient protection."
+      },
+      "redline_comment": "⚠️ CRITICAL ISSUE: Liability cap of 3 months of fees is well below industry standard for enterprise SaaS agreements. Standard practice requires 12 months of fees or $500K minimum, whichever is greater. RISK ASSESSMENT: This cap provides insufficient coverage for potential damages from service outages, data loss, or security breaches. For a $50K/year contract, maximum liability would be only $12.5K - inadequate for business-critical systems. RECOMMENDATION: Revise to 'Vendor's total liability shall not exceed the greater of (i) fees paid in the twelve (12) months preceding the claim, or (ii) Five Hundred Thousand Dollars ($500,000).'"
+    },
+    {
+      "clause_id": "JURIS_001",
+      "clause_type": "jurisdiction",
+      "clause_text": "This Agreement shall be governed by the laws of the State of Delaware, and any disputes shall be resolved exclusively in the courts of Delaware.",
+      "compliance_violation": {
+        "violation_type": "Jurisdiction problems",
+        "severity": "MEDIUM",
+        "description": "Jurisdiction clause may create logistical and cost barriers for dispute resolution if Client is not based in Delaware."
+      },
+      "redline_comment": "⚠️ ISSUE: Exclusive Delaware jurisdiction may present practical challenges and increased costs for Client if not domiciled in Delaware. CONCERNS: (1) Travel costs for litigation, (2) Unfamiliarity with Delaware courts, (3) Potential home-court advantage for Vendor. RECOMMENDATION: If Client is based elsewhere, negotiate for either: (a) Client's home jurisdiction, (b) Mutual agreement on neutral jurisdiction, or (c) Add arbitration clause as alternative: 'Either party may elect binding arbitration under AAA Commercial Arbitration Rules in [Client's location].' Delaware law governing but with venue flexibility is an acceptable compromise."
+    },
+    {
+      "clause_id": "PAYMENT_001",
+      "clause_type": "payment_terms",
+      "clause_text": "Client agrees to pay all fees annually in advance within five (5) business days of invoice date. Late payments shall incur interest at 2% per month. All fees are non-refundable.",
+      "compliance_violation": {
+        "violation_type": "Payment terms issues",
+        "severity": "HIGH",
+        "description": "Payment terms are heavily vendor-favored with unreasonable advance payment requirements, excessive late fees, and blanket non-refundability that violates standard commercial practices."
+      },
+      "redline_comment": "⚠️ CRITICAL ISSUES - Multiple problematic terms: (1) ADVANCE ANNUAL PAYMENT: 5-day payment window for full year is unreasonable and creates cash flow burden. Standard is Net 30 with quarterly/monthly billing options. (2) EXCESSIVE LATE FEE: 2% monthly (24% APR) exceeds legal limits in many states (typically 1-1.5% max). (3) NON-REFUNDABLE: Blanket non-refundability is unconscionable if Vendor fails to perform or breaches contract. RECOMMENDATIONS: Revise to 'Client shall pay fees [quarterly/monthly] within thirty (30) days of invoice. Late payments incur 1% monthly interest. Fees are non-refundable except in cases of Vendor material breach or failure to deliver contracted services, in which case prorated refunds shall apply.'"
+    },
+    {
+      "clause_id": "TERM_001",
+      "clause_type": "termination",
+      "clause_text": "This Agreement shall automatically renew for successive one-year terms unless either party provides written notice of non-renewal at least ninety (90) days prior to the end of the then-current term.",
+      "compliance_violation": {
+        "violation_type": "Non-standard liability caps",
+        "severity": "MEDIUM",
+        "description": "90-day termination notice requirement is excessive and creates vendor lock-in risks, especially combined with annual advance payment terms."
+      },
+      "redline_comment": "⚠️ ISSUE: 90-day non-renewal notice combined with annual terms creates significant lock-in risk. CONCERNS: (1) If Client misses the 90-day window, they're committed for another full year, (2) Combined with advance annual payment, this could lock Client into 15+ months of payment, (3) Does not address termination for cause or convenience. RECOMMENDATIONS: (a) Reduce notice period to 30-60 days (industry standard), (b) Add termination for convenience with 30-day notice and prorated refund, (c) Add termination for cause without penalty: 'Either party may terminate immediately upon written notice if the other party materially breaches this Agreement and fails to cure within thirty (30) days of notice.'"
+    }
+  ]
+}
